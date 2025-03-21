@@ -38,6 +38,7 @@ import Gallery from './TanstackQuery/Gallery'
 import { Context } from './ContextAPI-modal/Context'
 import Counter from './useReducer,Redux/Counter'
 import Dashboard from './Redux/Dashboard'
+import Counter_333 from './ReduxToolkit/Counter_333'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -93,7 +94,8 @@ function App() {
      <Home/>
      </Context> */}
      {/* <Counter/> */}
-     <Dashboard/>
+     {/* <Dashboard/> */}
+     <Counter_333/>
      
     </>
   )

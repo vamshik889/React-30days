@@ -8,14 +8,15 @@ import { AuthContext } from "./Router/context/AuthContext.jsx";
 import { AppProvider } from "./TanstackQuery/Context.jsx";
 import { QueryClientProvider,QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import store from "./Redux/store.js"
+import store from "./Redux/store1.js"
 import {Provider} from "react-redux"
+import store2 from "./ReduxToolkit/store2";
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
   <AppProvider>
     <QueryClientProvider client={queryClient}>
-      <Provider store={store}>
+      <Provider store={store2}>
 
       <App />
       </Provider>
