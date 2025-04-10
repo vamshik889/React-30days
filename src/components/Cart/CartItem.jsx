@@ -2,11 +2,12 @@ import React from 'react'
 import Quantity from './Quantity'
 import Price from './Price'
 
-const CartItem = ({title,price,quantity}) => {
+const CartItem = ({item,updateQty}) => {
+  const {title} = item;
   return (
     <div>
         <h4>{title}</h4>
-        <Quantity price={price} quantity={quantity}/>
+        <Quantity item= {item} updateQty={updateQty} />
       
     </div>
   )

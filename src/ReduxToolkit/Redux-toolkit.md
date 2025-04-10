@@ -9,9 +9,7 @@
 🔹 Step 1: Install Dependencies
 Before using Redux Toolkit, install the necessary packages in your React project:
 
-sh
-Copy
-Edit
+
 npm install @reduxjs/toolkit react-redux
 🔹 Step 2: Create the Redux Store (store2.js)
 We need to create a Redux store that manages our application's state.
@@ -22,9 +20,7 @@ configureStore (to create the store)
 createSlice (to create a slice of state)
 Define Initial State
 The state contains:
-js
-Copy
-Edit
+
 const initialState = {
   count: 0,        // Counter value
   showCounter: true // Whether the counter is visible
@@ -37,9 +33,7 @@ reducers: Functions that modify the state
 Redux Toolkit uses Immer internally, so we can mutate the state directly.
 Set Up Reducers
 Each function modifies the state:
-js
-Copy
-Edit
+
 increment(state) { state.count += 1; }
 decrement(state) { state.count -= 1; }
 reset(state) { state.count = 0; }
@@ -51,9 +45,8 @@ Export Actions & Store
 counterActions (for dispatching actions)
 store2 (to provide the Redux store)
 ✅ Final store2.js Code
-js
-Copy
-Edit
+
+
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 // Step 1: Define Initial State
@@ -103,9 +96,7 @@ Import Provider from react-redux
 Import the Redux store (store2)
 Wrap <App /> inside <Provider store={store2}>
 ✅ Final main.jsx Code
-js
-Copy
-Edit
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
@@ -134,9 +125,7 @@ Dispatch Actions on Button Click
 Use useDispatch() to update the Redux state
 Wrap dispatch() inside an arrow function
 ✅ Final Counter_333.jsx Code
-jsx
-Copy
-Edit
+
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { counterActions } from './store2';

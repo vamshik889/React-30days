@@ -39,6 +39,8 @@ import { Context } from './ContextAPI-modal/Context'
 import Counter from './useReducer,Redux/Counter'
 import Dashboard from './Redux/Dashboard'
 import Counter_333 from './ReduxToolkit/Counter_333'
+import Otp from "./OTPLogin/Otp"
+import Page from './Modal/Page'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -86,16 +88,20 @@ function App() {
       {/* <Notes/> */}
       {/* <Navigation/>
       <AllRoutes/> */}
-     {/* <ThemeToggle/>
+{/*       
+     <ThemeToggle/>
      <SearchForm/>
-     <Gallery/> */}
+     <Gallery/>  */}
 
      {/* <Context>
      <Home/>
      </Context> */}
      {/* <Counter/> */}
      {/* <Dashboard/> */}
-     <Counter_333/>
+     {/* <Counter_333/> */}
+     
+     <Otp size={6}/>
+     {/* <Page/> */}
      
     </>
   )

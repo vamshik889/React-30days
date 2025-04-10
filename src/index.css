@@ -111,5 +111,45 @@ body{
   display: grid;
   place-items: center;
   cursor: pointer;
-  outline: none;
+  outline: none;  
+}
+
+/*Modal component styling*/
+.modal-wrapper{
+
+  background-color:rgba(189,189,189,0.9);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  
+}
+.modal-container{
+  height:200px;
+  width:350px;
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color:white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius:5px;
+  padding:10px
+}
+.heading-container{
+  display:flex;
+  padding:5px;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+.close-btn{
+  height:20px;
+  border:none;
+  background-color:transparent;
+  cursor:pointer;
+  margin-top:-40px
 }

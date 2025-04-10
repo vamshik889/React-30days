@@ -37,7 +37,7 @@ const Gallery = () => {
   }
 
   const results = data?.results || [];
-  console.log(results);
+  console.log("data",data,"results",results);
 
   if (results.length < 1) {
     return (

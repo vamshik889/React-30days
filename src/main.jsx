@@ -16,10 +16,10 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
   <AppProvider>
     <QueryClientProvider client={queryClient}>
-      <Provider store={store2}>
+      {/* <Provider store={store2}>  */} {/*un comment this for the redux toolkit */}
 
       <App />
-      </Provider>
+      {/* </Provider> */}
       <ReactQueryDevtools initialIsOpen={true}/>
     </QueryClientProvider>
     {/* <BrowserRouter> */}

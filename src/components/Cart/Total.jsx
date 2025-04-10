@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from 'react'
 
-const Total = ({items}) => {
-    console.log(items);
-    const [total,setTotal] = useState(() =>
-        items.reduce((acc, cur) => acc + cur.price, 0))
+const Total = ({ items }) => {
+  const [sum, setSum] = useState(null);
 
-    useEffect(()=>{
-        setTotal(
-            items.reduce((acc,cur)=>{
-                return acc+cur.price;
-            },0)
-        )
-    },[items]);
-    console.log(total)
+  useEffect(() => {
+    const calc = items.reduce((acc, cur) => acc + cur.price*cur.quantity, 0);
+
+    setSum(calc);
+    console.log(calc, "updated total in useEffect");
+  }, [items]);
+
   return (
     <div>
-        <h3>{`Total of all items: ${total}`}</h3>
+      <h3>{`Total of all items: ${sum}`}</h3>
     </div>
-  )
-}
+  );
+};
 
-export default Total
+export default Total;

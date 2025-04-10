@@ -3,7 +3,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 //  install redux tool kit from npm i @reduxjs/toolkit
 //create the initial state
 //create a slice of a state using createSlice which accepts an object with a name, state, reducers properties
-// .create store using the configureStore from redux toolkit
+// create store using the configureStore from redux toolkit
 //
 const initialState = {
   count: 0,
