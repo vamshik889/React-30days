@@ -37,10 +37,11 @@ import SearchForm from './TanstackQuery/SearchForm'
 import Gallery from './TanstackQuery/Gallery'
 import { Context } from './ContextAPI-modal/Context'
 import Counter from './useReducer,Redux/Counter'
-import Dashboard from './Redux/Dashboard'
+import Dashboard from './fakeStore_ReduxToolit/Dashboard'
 import Counter_333 from './ReduxToolkit/Counter_333'
 import Otp from "./OTPLogin/Otp"
 import Page from './Modal/Page'
+import Routes_fake from './fakeStore_ReduxToolit/Routes_fake'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -100,8 +101,10 @@ function App() {
      {/* <Dashboard/> */}
      {/* <Counter_333/> */}
      
-     <Otp size={6}/>
+     {/* <Otp size={6}/> */}
      {/* <Page/> */}
+     {/* <Dashboard/> */}
+     <Routes_fake/>
      
     </>
   )

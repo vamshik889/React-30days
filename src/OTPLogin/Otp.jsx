@@ -67,6 +67,8 @@ const Otp = ({ size = 6 }) => {
       }
     }
   };
+
+  //handling backSpaces
   const handleBackSpace = (event) => {
     if (event.key === "Backspace") {
       let inputIndex = Number(event.target.id);
