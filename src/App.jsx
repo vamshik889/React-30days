@@ -45,6 +45,7 @@ import Routes_fake from './fakeStore_ReduxToolit/Routes_fake'
 import Checkbox from './CheckboxRadioBtn/Checkbox'
 import SelectAllCheckBox from './CheckboxRadioBtn/SelectAllCheckBox'
 import Memo from './Reactmemo/Memo'
+import TransferList from './Challenges/TransferList'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -110,7 +111,8 @@ function App() {
      {/* <Routes_fake/> */}
      {/* <Checkbox/> */}
      {/* <SelectAllCheckBox/> */}
-     <Memo/>
+     {/* <Memo/> */}
+     <TransferList/>
      
     </>
   )
