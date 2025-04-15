@@ -42,6 +42,9 @@ import Counter_333 from './ReduxToolkit/Counter_333'
 import Otp from "./OTPLogin/Otp"
 import Page from './Modal/Page'
 import Routes_fake from './fakeStore_ReduxToolit/Routes_fake'
+import Checkbox from './CheckboxRadioBtn/Checkbox'
+import SelectAllCheckBox from './CheckboxRadioBtn/SelectAllCheckBox'
+import Memo from './Reactmemo/Memo'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -104,7 +107,10 @@ function App() {
      {/* <Otp size={6}/> */}
      {/* <Page/> */}
      {/* <Dashboard/> */}
-     <Routes_fake/>
+     {/* <Routes_fake/> */}
+     {/* <Checkbox/> */}
+     {/* <SelectAllCheckBox/> */}
+     <Memo/>
      
     </>
   )
