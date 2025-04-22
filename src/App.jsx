@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Button from './Day-4Components/Button'
+import Button from './CustomHooks/Button'
 import AlertBox from './Day-4Components/AlertBox'
 import Subscribe from './Day-4Components/Subscribe'
 import Products from './Day-5/Products'
@@ -16,7 +16,7 @@ import Timer from './components/Timer'
 import MainCounter from './components/Counters/MainCounter'
 import CartContainer from './components/Cart/CartContainer'
 import CartContainer2 from './components/Cart2/CartContainer2'
-import UseEffect1 from './components/useEffect1'
+import useEffect1 from './components/useEffect1'
 import Mapping from './day-6/Mapping'
 import Figma from './day-6/figmaTabs/Figma'
 import MoviesContainer from './Movies/MoviesContainer'
@@ -46,6 +46,13 @@ import Checkbox from './CheckboxRadioBtn/Checkbox'
 import SelectAllCheckBox from './CheckboxRadioBtn/SelectAllCheckBox'
 import Memo from './Reactmemo/Memo'
 import TransferList from './Challenges/TransferList'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Components from './Bootstrap/Components'
+import Form1 from './FormValidations/Form1'
+import Validation from './FormValidations/Validation'
+import Layout from './Routing_setup/components/Layout'
+import LoginProvider from './Routing_setup/components/LoginProvider'
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -112,7 +119,15 @@ function App() {
      {/* <Checkbox/> */}
      {/* <SelectAllCheckBox/> */}
      {/* <Memo/> */}
-     <TransferList/>
+     {/* <TransferList/> */}
+     {/* <Button/> */}
+     {/* <Components/> */}
+     {/* <Form1/> */}
+     {/* <Validation/> */}
+     <LoginProvider>
+
+     <Layout/>
+     </LoginProvider>
      
     </>
   )
