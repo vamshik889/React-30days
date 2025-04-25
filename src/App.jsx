@@ -54,6 +54,7 @@ import Layout from './Routing_setup/components/Layout'
 import LoginProvider from './Routing_setup/components/LoginProvider'
 import BankAccount from './reducerWithContext/BankAccount'
 import AccountContext from './reducerWithContext/AccountContext'
+import  Pagination  from './Pagination/Pagination'
 
 
 function App() {
@@ -128,13 +129,14 @@ function App() {
      {/* <Validation/> */}
 
      {/* <LoginProvider>
-
      <Layout/>
      </LoginProvider> */}
-     <AccountContext>
 
+     {/* <AccountContext>
      <BankAccount/>
-     </AccountContext>
+     </AccountContext> */}
+<Pagination/>
+
      
     </>
   )
