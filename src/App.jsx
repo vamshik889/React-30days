@@ -52,6 +52,8 @@ import Form1 from './FormValidations/Form1'
 import Validation from './FormValidations/Validation'
 import Layout from './Routing_setup/components/Layout'
 import LoginProvider from './Routing_setup/components/LoginProvider'
+import BankAccount from './reducerWithContext/BankAccount'
+import AccountContext from './reducerWithContext/AccountContext'
 
 
 function App() {
@@ -124,10 +126,15 @@ function App() {
      {/* <Components/> */}
      {/* <Form1/> */}
      {/* <Validation/> */}
-     <LoginProvider>
+
+     {/* <LoginProvider>
 
      <Layout/>
-     </LoginProvider>
+     </LoginProvider> */}
+     <AccountContext>
+
+     <BankAccount/>
+     </AccountContext>
      
     </>
   )
