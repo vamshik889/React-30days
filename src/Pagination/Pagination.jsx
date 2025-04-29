@@ -12,7 +12,7 @@ const Pagination = () => {
     const { value } = e.target;
 
     setItemsPerPage(Number(value));
-    setPage(1)
+    setPage(1); //we are setting the page to 1 whenever the items per page gets changed to avoid the empty data
   };
   const pageArray = Array.from(
     { length: Math.ceil(data.length / itemsPerPage) },
@@ -24,12 +24,30 @@ const Pagination = () => {
     setPage(Number(e.target.value));
   };
 
+  //Using async await
+  // const fetchdata = async()=>{
+  //   try {
+  //     const res = await fetch("https://jsonplaceholder.typicode.com/comments");
+  //     const data = await res.json();
+  //     setdata(data)
+
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  //   finally{
+
+  //   }
+
+  // }
+
   //fetching data
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/comments")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
+
+    //fetchdata()
   }, []);
 
   //function to get the data based on page number
@@ -51,8 +69,7 @@ const Pagination = () => {
 
   return (
     <>
-
-    <div>
+      <div>
         {paginatedData.length > 0 &&
           paginatedData.map((ele, ind) => (
             <li key={ele.id} style={{ listStyleType: "none" }}>
@@ -76,16 +93,15 @@ const Pagination = () => {
         )}
       </div>
       <div>
-
-<label htmlFor="itemsNo">Items per Page:</label>
-<select name="" id="itemsNo" onChange={handleItemsChange}>
-  <option value="10">10</option>
-  <option value="20">20</option>
-  <option value="30">30</option>
-  <option value="40">40</option>
-  <option value="50">50</option>
-</select>
-</div>
+        <label htmlFor="itemsNo">Items per Page:</label>
+        <select name="" id="itemsNo" onChange={handleItemsChange}>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+        </select>
+      </div>
     </>
   );
 };

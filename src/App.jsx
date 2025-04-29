@@ -55,6 +55,7 @@ import LoginProvider from './Routing_setup/components/LoginProvider'
 import BankAccount from './reducerWithContext/BankAccount'
 import AccountContext from './reducerWithContext/AccountContext'
 import  Pagination  from './Pagination/Pagination'
+import InputWithItems from './InputItems/InputWithItems'
 
 
 function App() {
@@ -135,7 +136,8 @@ function App() {
      {/* <AccountContext>
      <BankAccount/>
      </AccountContext> */}
-<Pagination/>
+{/* <Pagination/> */}
+<InputWithItems/>
 
      
     </>
