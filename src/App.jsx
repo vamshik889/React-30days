@@ -56,6 +56,7 @@ import BankAccount from './reducerWithContext/BankAccount'
 import AccountContext from './reducerWithContext/AccountContext'
 import  Pagination  from './Pagination/Pagination'
 import InputWithItems from './InputItems/InputWithItems'
+import ColorCyclingBox from './Challenges/ColorCyclingBox'
 
 
 function App() {
@@ -137,8 +138,9 @@ function App() {
      <BankAccount/>
      </AccountContext> */}
 {/* <Pagination/> */}
-<InputWithItems/>
+{/* <InputWithItems/> */}
 
+<ColorCyclingBox/>
      
     </>
   )
