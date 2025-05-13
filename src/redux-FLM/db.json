@@ -1,0 +1,33 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "flm"
+    },
+    {
+      "id": "452e",
+      "title": "redux"
+    },
+    {
+      "id": "7575",
+      "title": "todo"
+    },
+    {
+      "id": "d9fe",
+      "title": "redux-2"
+    },
+    {
+      "id": "38c8",
+      "title": "rrr"
+    },
+    {
+      "id": "1c82",
+      "title": "kjl"
+    },
+    {
+      "id": "5e68",
+      "title": "ljgldjl"
+    }
+  ]
+}
