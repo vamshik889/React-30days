@@ -57,6 +57,8 @@ import AccountContext from './reducerWithContext/AccountContext'
 import  Pagination  from './Pagination/Pagination'
 import InputWithItems from './InputItems/InputWithItems'
 import ColorCyclingBox from './Challenges/ColorCyclingBox'
+import Form333 from './components/Form333'
+import Accordion from './components/Accordion'
 
 
 function App() {
@@ -140,7 +142,9 @@ function App() {
 {/* <Pagination/> */}
 {/* <InputWithItems/> */}
 
-<ColorCyclingBox/>
+{/* <ColorCyclingBox/> */}
+{/* <Form333/> */}
+<Accordion/>
      
     </>
   )
