@@ -41,7 +41,7 @@ const Accordion = () => {
         <div key={index} onClick={() => handleClick(index)}
         style={style}
         >
-          <p style={style1}>{item.title}<span style={{display:"inline-block",marginLeft:"200px"}}>{itemIndex === index?"⬆️":"⬇️"}</span></p> 
+          <p>{item.title}<span style={{display:"inline-block",marginLeft:"200px"}}>{itemIndex === index?"⬆️":"⬇️"}</span></p> 
           {itemIndex === index && <p>{item.content}</p>}
         </div>
       ))}
