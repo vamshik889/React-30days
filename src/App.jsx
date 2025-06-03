@@ -59,6 +59,9 @@ import InputWithItems from './InputItems/InputWithItems'
 import ColorCyclingBox from './Challenges/ColorCyclingBox'
 import Form333 from './components/Form333'
 import Accordion from './components/Accordion'
+import { Dropdown } from 'react-bootstrap'
+import Dropdown1 from './Challenges/Dropdown1'
+import Test from './Challenges/Test'
 
 
 function App() {
@@ -144,7 +147,9 @@ function App() {
 
 {/* <ColorCyclingBox/> */}
 {/* <Form333/> */}
-<Accordion/>
+{/* <Accordion/> */}
+{/* <Dropdown1/> */}
+<Test/>
      
     </>
   )
