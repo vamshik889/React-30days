@@ -62,6 +62,8 @@ import Accordion from './components/Accordion'
 import { Dropdown } from 'react-bootstrap'
 import Dropdown1 from './Challenges/Dropdown1'
 import Test from './Challenges/Test'
+import TogglePassword from './Challenges/TogglePassword'
+import StarRating from './Challenges/StarRating'
 
 
 function App() {
@@ -149,7 +151,9 @@ function App() {
 {/* <Form333/> */}
 {/* <Accordion/> */}
 {/* <Dropdown1/> */}
-<Test/>
+{/* <Test/> */}
+{/* <TogglePassword/> */}
+<StarRating stars={5} />
      
     </>
   )
