@@ -64,6 +64,8 @@ import Dropdown1 from './Challenges/Dropdown1'
 import Test from './Challenges/Test'
 import TogglePassword from './Challenges/TogglePassword'
 import StarRating from './Challenges/StarRating'
+import CardsCarousel from './Challenges/CardsCarousel'
+import FileUpload from './FileUpload_Preview/FileUpload'
 
 
 function App() {
@@ -153,7 +155,9 @@ function App() {
 {/* <Dropdown1/> */}
 {/* <Test/> */}
 {/* <TogglePassword/> */}
-<StarRating stars={5} />
+{/* <StarRating stars={5} /> */}
+{/* <CardsCarousel /> */}
+<FileUpload/>
      
     </>
   )

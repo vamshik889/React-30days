@@ -4,7 +4,7 @@ const Child =  React.memo( ({name})=>{
     console.log("render in child-1")
 
   return (
-    <div>{name}{}</div>
+    <div>{name}</div>
   )
 })
 
