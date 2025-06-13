@@ -66,6 +66,7 @@ import TogglePassword from './Challenges/TogglePassword'
 import StarRating from './Challenges/StarRating'
 import CardsCarousel from './Challenges/CardsCarousel'
 import FileUpload from './FileUpload_Preview/FileUpload'
+import Formik_1 from './ReactFormik/Formik_1'
 
 
 function App() {
@@ -157,7 +158,8 @@ function App() {
 {/* <TogglePassword/> */}
 {/* <StarRating stars={5} /> */}
 {/* <CardsCarousel /> */}
-<FileUpload/>
+{/* <FileUpload/> */}
+<Formik_1/>
      
     </>
   )
