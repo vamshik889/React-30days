@@ -7,25 +7,25 @@ const Form333 = () => {
     password: "",
   };
 
-  const [data,setData] = useState([])
+  const [data, setData] = useState([]);
   const errorState = {
-    name:false,
-    email:false,
-    password:false
-  }
-  const [errors,setErrors] = useState(errorState)
+    name: false,
+    email: false,
+    password: false,
+  };
+  const [errors, setErrors] = useState(errorState);
   const [formData, setFormData] = useState(formInitialState);
   const handleSubmit = (e) => {
     e.preventDefault();
-    const {name,email,password} = formData;
-    if(!name.trim() || name.length<6 ){
-        setErrors((prev)=>({...prev,name:true}))
+    const { name, email, password } = formData;
+    if (!name.trim() || name.length < 6) {
+      setErrors((prev) => ({ ...prev, name: true }));
     }
-       if(!email.trim() || !email.includes("@") ){
-        setErrors((prev)=>({...prev,email:true}))
+    if (!email.trim() || !email.includes("@")) {
+      setErrors((prev) => ({ ...prev, email: true }));
     }
-       if(!password.trim() || password.length<6  ){
-        setErrors((prev)=>({...prev,password:true}))
+    if (!password.trim() || password.length < 6) {
+      setErrors((prev) => ({ ...prev, password: true }));
     }
   };
   const handleChange = (e) => {
@@ -35,27 +35,23 @@ const Form333 = () => {
       [id]: value,
     }));
   };
-const URL = "https://dummyjson.com/users"
-  const fetchdata = async(url)=>{
+  const URL = "https://dummyjson.com/users";
+  const fetchdata = async (url) => {
     try {
-     const response =  await fetch(url);
-      if(!response.ok) throw new Error;
-     const data =  await response.json();
-     setData(data)
+      const response = await fetch(url);
+      if (!response.ok) throw new Error();
+      const data = await response.json();
+      setData(data);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
-  useEffect(()=>{
+  };
+  useEffect(() => {
     fetchdata(URL);
-    
-
-  },[])
-    useEffect(()=>{
-  
-    console.log(data)
-
-  },[data])
+  }, []);
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
   useEffect(() => {
     console.log(formData);
   }, [formData]);
@@ -81,7 +77,7 @@ const URL = "https://dummyjson.com/users"
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",   
+            alignItems: "center",
             gap: "20px",
           }}
           onChange={handleChange}
@@ -107,11 +103,11 @@ const URL = "https://dummyjson.com/users"
         <input type="submit" />
       </form>
       <ul>
-        {
-           data?.users?.length>0 ? data?.users.map((user)=><li key={user.id}>
-            {user.firstName}
-          </li>)
-         :<h2>Loading...</h2>}
+        {data?.users?.length > 0 ? (
+          data?.users.map((user) => <li key={user.id}>{user.firstName}</li>)
+        ) : (
+          <h2>Loading...</h2>
+        )}
       </ul>
     </div>
   );

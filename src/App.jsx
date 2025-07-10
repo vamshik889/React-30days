@@ -70,6 +70,7 @@ import Formik_1 from "./ReactFormik/Formik_1";
 import Practice_1 from "./Challenges/Practice_1";
 import MyForm from "./revise/MyForm";
 import June from "./Challenges/June";
+import Counter_111 from "./components/Counter_111";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -170,7 +171,8 @@ function App() {
       {/* <Formik_1/> */}
       {/* <Practice_1 /> */}
       {/* <MyForm/> */}
-      <June/>
+      {/* <June/> */}
+      <Counter_111/>
     </>
   );
 }
