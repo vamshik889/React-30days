@@ -18,7 +18,7 @@ const CartContainer2 = () => {
   )
   const increase = (id) => {
     const updated = item.map((item) => {
-      return id === item.id ? { ...item, quantity: item.quantity + 1 } : item;
+      return item.id ===id? { ...item, quantity: item.quantity + 1 } : item;
     });
     setItem(updated);
   };

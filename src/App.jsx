@@ -71,6 +71,9 @@ import Practice_1 from "./Challenges/Practice_1";
 import MyForm from "./revise/MyForm";
 import June from "./Challenges/June";
 import Counter_111 from "./components/Counter_111";
+import Cart_1 from "./Infy/Cart_1";
+import CartContext from "./Infy/CartContext";
+import Button3 from "./Button3";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -172,7 +175,12 @@ function App() {
       {/* <Practice_1 /> */}
       {/* <MyForm/> */}
       {/* <June/> */}
-      <Counter_111/>
+      {/* <Counter_111/> */}
+      {/* <CartContext>
+
+      <Cart_1/>
+      </CartContext> */}
+      {/* <Button3 name="vamshi"/> */}
     </>
   );
 }
