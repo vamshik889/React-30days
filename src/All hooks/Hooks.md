@@ -3,7 +3,7 @@
 Theory
 useState is the most fundamental hook for managing component state. It allows functional components to have local state that persists between re-renders.
 
-jsx
+
 import React, { useState } from 'react';
 
 const Counter = () => {
