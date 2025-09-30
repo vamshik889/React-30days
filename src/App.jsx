@@ -74,6 +74,12 @@ import Counter_111 from "./components/Counter_111";
 import Cart_1 from "./Infy/Cart_1";
 import CartContext from "./Infy/CartContext";
 import Button3 from "./Button3";
+import RTK from "./RTKQuery/RTK";
+import AllProducts from "./RTKQuery/components/AllProducts";
+import Product from "./RTKQuery/components/Product";
+import AddProduct from "./RTKQuery/components/AddProduct";
+import UpdateProduct from "./RTKQuery/components/UpdateProduct";
+import DeleteProduct from "./RTKQuery/components/DeleteProduct";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -180,7 +186,13 @@ function App() {
 
       <Cart_1/>
       </CartContext> */}
-      {/* <Button3 name="vamshi"/> */}      
+      {/* <Button3 name="vamshi"/> */}     
+      {/* <RTK/>  */}
+      {/* <AllProducts/> */}
+      {/* <Product/> */}
+      {/* <AddProduct/> */}
+      {/* <UpdateProduct productId={3}/> */}
+      <DeleteProduct productId = {3}/>
     </>
   );
 }
