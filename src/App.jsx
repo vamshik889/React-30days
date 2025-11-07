@@ -80,6 +80,11 @@ import Product from "./RTKQuery/components/Product";
 import AddProduct from "./RTKQuery/components/AddProduct";
 import UpdateProduct from "./RTKQuery/components/UpdateProduct";
 import DeleteProduct from "./RTKQuery/components/DeleteProduct";
+import RouteLayout from "./HOC/components/RouteLayout";
+import RecipeFilterApp from "./NamasteDev/RecipeFilter/RecipeFilter";
+import CharacterCount from "./NamasteDev/RecipeFilter/CharacterCount/CharacterCount";
+import CopyClipboard from "./NamasteDev/Clipboard/CopyToClipBoard";
+import TypeWriter from "./NamasteDev/TypeWriter/TypeWriter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -192,7 +197,12 @@ function App() {
       {/* <Product/> */}
       {/* <AddProduct/> */}
       {/* <UpdateProduct productId={3}/> */}
-      <DeleteProduct productId = {3}/>
+      {/* <DeleteProduct productId = {3}/> */}
+       {/* <RouteLayout/> */}
+       {/* <RecipeFilterApp/> */}
+       {/* <CharacterCount/> */}
+       {/* <CopyClipboard/> */}
+       <TypeWriter/>
     </>
   );
 }
