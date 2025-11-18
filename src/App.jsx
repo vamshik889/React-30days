@@ -85,6 +85,8 @@ import RecipeFilterApp from "./NamasteDev/RecipeFilter/RecipeFilter";
 import CharacterCount from "./NamasteDev/RecipeFilter/CharacterCount/CharacterCount";
 import CopyClipboard from "./NamasteDev/Clipboard/CopyToClipBoard";
 import TypeWriter from "./NamasteDev/TypeWriter/TypeWriter";
+import Main1 from "./ForwardingProps_Children/Main1";
+import ModalConsumer from "./ForwardingProps_Children/ModalConsumer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -202,9 +204,13 @@ function App() {
        {/* <RecipeFilterApp/> */}
        {/* <CharacterCount/> */}
        {/* <CopyClipboard/> */}
-       <TypeWriter/>
+       {/* <TypeWriter/> */}
+       {/* <Main1/> */}
+       <ModalConsumer/>
     </>
   );
 }
 
 export default App;
+
+//comment
