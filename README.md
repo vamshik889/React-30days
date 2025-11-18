@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 
 
 Edit in remote master
+
+edited based on MR comments
